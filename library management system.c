@@ -73,7 +73,7 @@ return 0;
 void mainmenu()
 {
 //loaderanim();
-system("cls");
+//system("cls");
 //    textbackground(13);
 int i;
 gotoxy(20,3);
@@ -809,27 +809,27 @@ union REGS in,out;
 void Password(void) //for password option
 {
 
-system("cls");
+//system("cls");
 char d[25]="Password Protected";
 char ch,pass[10];
 int i=0,j;
 //textbackground(WHITE);
 //textcolor(RED);
 gotoxy(10,4);
-for(j=0;j<20;j++)
+for(j=0;j<10;j++)
 {
 Sleep(50);
-printf("*");
+printf("* ");
 }
 for(j=0;j<20;j++)
 {
 Sleep(50);
 printf("%c",d[j]);
 }
-for(j=0;j<20;j++)
-{
+for(j=0;j<10;j++)
+{ 
 Sleep(50);
-printf("*");
+printf("* ");
 }
 gotoxy(10,10);
 gotoxy(15,7);
