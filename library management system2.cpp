@@ -181,7 +181,7 @@ scanf("%d",&s);
 if(s==7)
 
 mainmenu() ;
-system("cls");
+//system("cls");
 fp=fopen("Bibek.dat","ab+");
 if(getdata()==1)
 {
@@ -205,7 +205,7 @@ void deletebooks()    //function that delete items from file fp
 system("cls");
 int d;
 char another='y';
-while(another=='y')  //infinite loop
+while(another=='y')  \
 {
 system("cls");
 gotoxy(10,5);
@@ -788,10 +788,10 @@ int checkid(int t)  //check whether the book is exist in library or not
 rewind(fp);
 while(fread(&a,sizeof(a),1,fp)==1)
 if(a.id==t)
-return 0;  //returns 0 if book exits
-return 1; //return 1 if it not
+return 0; 
+return 1; 
 }
-int t(void) //for time
+int t(void) //Time (Function)
 {
 time_t t;
 time(&t);
@@ -799,21 +799,14 @@ printf("Date and time:%s\n",ctime(&t));
 
 return 0 ;
 }
-/*void show_mouse(void) //show inactive mouse pointer in programme
-{
-union REGS in,out;
-       in.x.ax = 0x1;
-       int86(0x33,&in,&out);
-}*/
-void Password(void) //for password option
+
+void Password(void) 
 {
 
 system("cls");
 char d[25]="Password Protected";
 char ch,pass[10];
 int i=0,j;
-//textbackground(WHITE);
-//textcolor(RED);
 gotoxy(10,4);
 for(j=0;j<10;j++)
 {
